@@ -7,7 +7,7 @@ RUN apk upgrade \
     && apk add git \
     && go get github.com/shadowsocks/go-shadowsocks2
 
-FROM alpine:3.12 AS dist
+FROM alpine:3.19.6 AS dist
 
 LABEL maintainer="mritd <mritd@linux.com>"
 
